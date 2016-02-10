@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xpb11160.helloagain" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FactOfTheDay"
+            android:label="@string/fact_of_the_day"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.example.xpb11160.helloagain.FactOfTheDay" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".quiz_page"
+            android:label="@string/title_activity_quiz_page"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.example.xpb11160.helloagain.quiz_page" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
+
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.example.xpb11160.helloagain.HomePage" />
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+
+            </intent-filter>
+        </activity>
+
+
+
+
+    </application>
+
+</manifest>

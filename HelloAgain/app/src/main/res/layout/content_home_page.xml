@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home_page"
+    tools:context="com.example.xpb11160.helloagain.HomePage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to Computer Aided Health!"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="The mobile app designed for and about CAH"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz"
+            android:id="@+id/button6"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diary"
+            android:id="@+id/button7"
+            android:layout_below="@+id/button6"
+            android:layout_alignLeft="@+id/button6"
+            android:layout_alignStart="@+id/button6"
+            android:layout_marginTop="31dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buddy"
+            android:id="@+id/button8"
+            android:layout_below="@+id/button7"
+            android:layout_alignLeft="@+id/button7"
+            android:layout_alignStart="@+id/button7"
+            android:layout_marginTop="32dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine Reminder"
+            android:id="@+id/button9"
+            android:layout_below="@+id/button8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp" />
+    </RelativeLayout>
+</RelativeLayout>
